@@ -13,7 +13,7 @@ s = {
 
 def example(s):
   r = eval(s)
-  print(s, " ", r)
+  print(s, " = ", r)
 
 pprint.pprint(s)
 o = dig(s)

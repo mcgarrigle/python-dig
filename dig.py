@@ -16,6 +16,9 @@ class dig:
             return dig(value)
         return value
 
+    def __repr__(self):
+        return f"<dig value={repr(self.value)} >"
+
     @property
     def _value(self):
         return self.value
