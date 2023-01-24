@@ -10,9 +10,7 @@ class dig:
         return self.__dig_this(self.value[index])
 
     def __dig_this(self, value):
-        if type(value) is dict:
-            return dig(value)
-        if type(value) is list:
+        if isinstance(value, (list, dict)):
             return dig(value)
         return value
 
